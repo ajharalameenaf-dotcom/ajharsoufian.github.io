@@ -1,0 +1,345 @@
+/* --- CONFIG SECTION --- */
+:root {
+	--header-color: rgba(255, 255, 255, 1);
+	--body-color: #2e8c2e;
+	--footer-color: rgba(255, 255, 255, 1);
+	--ul-color: rgba(255, 255, 255, 1);
+	--link-color: rgba(255, 255, 255, 1);
+	--hover-color: #39FF14;
+	--list-color: rgba(255, 255, 255, 1);
+	--title-color: rgba(255, 255, 255, 1);
+	--text-color: rgba(255, 255, 255, 1);
+	--all-bgcolor: rgba(13, 2, 8, 1);
+	--button-bgcolor: rgba(0, 59, 0, 1);
+	--buttonhover-bgcolor: rgba(57, 255, 20, 1);
+	--header-h1-fontsize: 60px;
+	--body-fontsize: 15px;
+	--h2-fontsize: 30px;
+	--h3-fontsize: 20px;
+	--link-fontsize: rgba(255, 255, 255, 1);
+	--hover-fontsize: rgba(255, 255, 255, 1);
+	--list-fontsize: rgba(255, 255, 255, 1);
+	--title-fontsize: rgba(255, 255, 255, 1);
+	--text-fontsize: rgba(255, 255, 255, 1);
+	--main-bgimage: url('./pics/bgmatrix.jpg')
+	}
+
+body {
+    margin: var(--body-fontsize);
+    font-family: Arial, sans-serif;
+    background-image: var(--main-bgimage);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-weight: bold;
+    color: var(--body-color);
+}
+
+header, footer{
+    background-color: var(--all-bgcolor);
+    text-align: center;
+    padding: 20px;
+    border: 5px outset #00FF41;
+    border-radius: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: var(--header-h1-fontsize);   
+}
+
+h2 {
+    font-size: var(--h2-fontsize);
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: var(--h3-fontsize);
+    font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+ul a {
+    text-decoration: none;
+    color: green;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--hover-color);
+}
+
+.content {
+    max-width: 1250px;
+    background-color: var(--all-bgcolor);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 30px;
+}
+
+
+.contact-item a {
+    text-decoration: none;
+    color: var(--body-color);
+}
+
+.contact-item a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.impres_icon {
+    max-width: 3%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--all-bgcolor);
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.impressum_container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    margin-bottom: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.impres_img_container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.impres_img_container {
+    flex: 1;
+}
+
+.start_pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.under_pic {
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+button {
+    padding: 20px;
+    background-color: var(--button-bgcolor);
+	color: var(--body-color);
+	border-radius: 8px;
+	justify-content: center;
+	align-items: center;
+	width:47.5%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-align {
+    padding: 20px;
+    background-color: var(--button-bgcolor);
+	color: var(--body-color);
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: px;
+}
+
+button a:hover { 
+    background-color: #3B8132;
+}
+
+.fälle ol {
+    list-style-type: none;
+}
+
+.dummies {
+    max-width: 1250px;
+    background-color: var(--all-bgcolor);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.advanced {
+    max-width: 1250px;
+    background-color: var(--all-bgcolor);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.quellen {
+    max-width: 1300px;
+    background-color: var(--all-bgcolor);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 30px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+   font-weight: 800;
+}
+
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+a:link {
+    color: var(--body-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--body-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+.dummies ol {
+  list-style-type: none;
+  counter-reset: custom-odd-counter;
+  padding-left: 2.5em; 
+}
+
+.dummies ol > li {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.dummies ol > li:nth-child(odd) {
+  counter-increment: custom-odd-counter;
+}
+
+.dummies ol > li:nth-child(odd)::before {
+  content: counter(custom-odd-counter) ".";
+  position: absolute;
+  left: -2em; 
+  width: 1.5em; 
+  text-align: right; 
+  font-weight: bold;
+}
+
+.dummies ol li ul {
+  padding-left: 1.5em; 
+  margin-top: 0.5em;
+}
+
+.dummies ol li ul li {
+  list-style-type: disc; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0FFF50;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.back-to-top:hover {
+  background-color: #000;
+}
+
+.back-to-start {
+  position: fixed;
+  bottom: 4.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0FFF50;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.back-to-start:hover {
+  background-color: #000;
+}
